@@ -1,0 +1,193 @@
+/* Universal Reset */
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Core Style */
+body{
+  background: #5b5656;
+  font-family:'Roboto', sans-serif;
+  line-height: 1.1;
+  color: #f5eaea;
+  font-size: 1rem;
+  overflow:hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rubik', sans-serif;
+  /* margin-bottom: 0.75rem; */
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Utility */
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1rem;
+  height: 100%;
+}
+.large-heading,.small-heading{
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.logo{
+  transition: color 0.4s linear;
+}
+.logo:hover{
+  color: #7fcd91;
+}
+
+.quote{
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+}
+/* Header: main */
+#main{
+  background: #4d4646;
+}
+
+#main .container{
+  display: grid;
+  justify-content: center;
+}
+
+#main .logo{
+  padding: 1rem;
+}
+
+#main .large-heading{
+  font-weight:700;
+  font-size: 3rem;
+}
+#main .small-heading{
+  font-size: 0.85rem;
+}
+
+.btn{
+  color: #7fcd91;
+  padding: 1rem 2rem;
+  background: #4d4646;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  transition: all 0.3s linear;
+}
+
+.btn:hover{
+ background: #f5eaea;
+}
+
+.p2-heading{
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+.p2-text{
+  font-size: 1.3rem;
+  line-height: 1.3;
+  font-weight: normal;
+  margin-bottom: 0.85rem
+}
+
+.list{
+  margin-top: 2rem;
+}
+
+.list li{
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.3;
+}
+span{
+  color: #f5eaea;
+}
+/* Showcase */
+#showcase{
+  color: #f5eaea;
+  position: relative;
+  height: 100vh;
+}
+
+#showcase:before{
+  content: '';
+  background: url("../img/showcase-john.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase .showcase-content{
+  z-index: 1;
+  background: url("../img/LogoMakr_0PQRd4.png") no-repeat;
+  background-size: 100px;
+  padding: 1rem;
+  transition: all 0.5s linear;
+  transform: translateY(-1200px);
+  animation: slide 1s forwards linear;
+  animation-iteration-count: 1;
+}
+
+/* Animation For Showcase Content */
+@keyframes slide{
+  100%{
+    transform: translateY(0px);
+  }
+  
+}
+/* Animation End */
+
+#showcase .showcase-content:hover{
+  background: url("../img/FAVPNG_quotation-marks-in-english-punctuation_ZrAxTjLY.png") no-repeat;
+  background-size: 100px;
+  background-position: 1% 0%;
+}
+#showcase .container{
+  display: grid;
+  align-items: center;
+  justify-self: center;
+}
+
+#showcase .button{
+justify-self: center;
+align-self: flex-start;
+}
+
+
+/* Tribute Section */
+
+#tribute{
+  height: 100vh;
+  padding: 1.5rem;
+  background: #7fcd91;
+  color: #4d4646;
+}
+#tribute .tribute-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+.tribute-content{
+  font-weight: 700;
+}
+.tribute-img{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-start;
+}
+#tribute .tribute-img img{
+  border-radius: 10px;
+}
+#tribute .tribute-img a{
+  text-align: center;
+  width: 55%;
+  margin-left: 10px;
+}
