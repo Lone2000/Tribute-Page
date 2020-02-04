@@ -63,3 +63,9 @@
     background-position: 80% 60%;
   }
 }
+
+@media(max-width:400px){
+.quote{
+  font-size: 0.65rem;
+}
+}
