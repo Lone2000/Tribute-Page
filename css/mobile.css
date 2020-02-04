@@ -1,0 +1,67 @@
+body{
+  overflow-y: scroll;
+}
+.container{
+  max-width: 800px;
+}
+/* Showcase Content */
+.quote{
+  font-size: 1rem;
+}
+
+#main .large-heading{
+  font-size: 2.25rem;
+}
+#main .small-heading{
+  font-size: 0.7rem;
+}
+
+.btn{
+  font-size: 1rem;
+}
+
+/* Tribute */
+.p2-heading{
+  font-size: 1.5rem;
+}
+.p2-text{
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.list li{
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+@media(max-width:600px){
+  body{
+    overflow: hidden;
+  }
+  .quote{
+    font-size: 0.85rem;
+  }
+  .btn{
+    font-size: 0.85rem;
+    padding: 0.85rem 2.5rem;
+  }
+  #tribute .tribute-container{
+    grid-template-columns: 1fr;
+  }
+  #tribute .tribute-img{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  #tribute .tribute-img img{
+    display: none;
+  }
+  .list{
+    margin-top: 1rem;
+  }
+  .list li{
+    padding: 0.45rem;
+    font-size: 0.85rem;
+  }
+  #showcase:before{
+    background-position: 80% 60%;
+  }
+}

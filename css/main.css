@@ -116,6 +116,7 @@ span{
   content: '';
   background: url("../img/showcase-john.jpg") no-repeat center center/cover;
   width: 100%;
+  background-position: 100% 60%;
   height: 100%;
   position: absolute;
   top: 10;
@@ -164,7 +165,7 @@ align-self: flex-start;
 /* Tribute Section */
 
 #tribute{
-  height: 100vh;
+  height: 100%;
   padding: 1.5rem;
   background: #7fcd91;
   color: #4d4646;
